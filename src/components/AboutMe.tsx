@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookOpen, Award, GraduationCap, Languages } from 'lucide-react';
 import { education, achievements } from '../data/profile';
+import ProfileImage from './ProfileImage';
 
 export const AboutMe = () => {
   return (
@@ -9,19 +10,19 @@ export const AboutMe = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Profile Section */}
           <div className="space-y-8">
-            <div className="flex flex-col items-center lg:items-start">
+            <div className="flex flex-col items-center">
               <div className="mb-8 relative">
-                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-[#F7EF40] shadow-lg">
-                  <img
-                    src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&q=80&w=800"
-                    alt="Dr. Villacorta"
-                    className="w-full h-full object-cover"
+                <div className="w-64 h-64 overflow-hidden border-4 border-[#F7EF40] shadow-lg">
+                  <ProfileImage
+                    username="jordanvillacorta"
+                    repo="power-giving-leader"
+                    imagePath="images/WV_2022.jpg"
+                    alt="Dr. Villacorta Profile Picture"
                   />
                 </div>
                 <div className="absolute -inset-1 bg-gradient-to-r from-[#663399] to-[#8A4FFF] rounded-full blur opacity-30"></div>
               </div>
               <h2 className="text-4xl font-serif font-bold text-white mb-6">
-                About{' '}
                 <span className="text-[#F7EF40]">Dr. Wilmer G. Villacorta</span>
               </h2>
               <div className="prose prose-invert">
