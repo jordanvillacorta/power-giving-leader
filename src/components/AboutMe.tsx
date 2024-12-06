@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Award, GraduationCap, Languages } from 'lucide-react';
+import { BookOpen, Award, GraduationCap, Languages, MapPin, Music, Coffee, Globe2 } from 'lucide-react';
 import { education, achievements } from '../data/profile';
 import ProfileImage from './ProfileImage';
 
@@ -11,8 +11,8 @@ export const AboutMe = () => {
           {/* Profile Section */}
           <div className="space-y-8">
             <div className="flex flex-col items-center">
-              <div className="mb-8 relative">
-                <div className="w-64 h-64 overflow-hidden border-4 border-[#F7EF40] shadow-lg">
+              <div className="mb-8">
+                <div className="w-64 h-64 overflow-hidden border-4 border-[#F7EF40] rounded-lg shadow-lg">
                   <ProfileImage
                     username="jordanvillacorta"
                     repo="power-giving-leader"
@@ -20,55 +20,63 @@ export const AboutMe = () => {
                     alt="Dr. Villacorta Profile Picture"
                   />
                 </div>
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#663399] to-[#8A4FFF] rounded-full blur opacity-30"></div>
               </div>
               <h2 className="text-4xl font-serif font-bold text-white mb-6">
                 <span className="text-[#F7EF40]">Dr. Wilmer G. Villacorta</span>
               </h2>
               <div className="prose prose-invert">
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  Dr. Villacorta joined the School of Intercultural Studies
-                  faculty in 2009, after serving three years as a spiritual
-                  mentor for in-service leaders at Fuller and teaching four
-                  years as an adjunct professor in the Master of Arts in Global
-                  Leadership (MAGL) program.
+                  I was born in Lima, Peru, and lived in Paris, France, for several years. I moved to the US in 1985, living in many major cities (New York, Philadelphia, Los Angeles). I have lived in Colorado Springs with my wife Jeannie and four kids since 2008. Although I lived in large cities on three continents, I got used to living in Colorado. My children (ages 32, 30, 26, and 24) learned to appreciate living in a small city more than I do. It is so amazing to see the wonder of God's creation just by living in this city. I am so thankful for such a gift of beauty. Besides all of the above, we have become grandparents; it is so exciting to see how it changes our lives and love for Colorado!
                 </p>
-                <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                  Prior to coming to Fuller, Dr. Villacorta served on faculty at
-                  the Center of Discipleship and Mission in Alhambra,
-                  California, the Missionary School of Emmanuel Bible Church in
-                  Peru, and the Latin American School of Missiology in Peru,
-                  where he also served as dean for four years.
-                </p>
-                <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                  He is the author of "Unmasking the Male Soul: Power and Gender
-                  Trap for Women in Leadership" (2019) and "Tug of War: The
-                  Downward Ascent of Power" (2017). His research focuses on
-                  transformational leadership and gender dynamics in religious
-                  contexts.
+                <p className="text-gray-300 text-lg leading-relaxed mt-8">
+                  My first book, titled &quot;Tug of War: The Downward Ascent of Power,&quot; published in July
+2017, is currently part of the MAGL curriculum. My second publication, &quot;Unmasking the
+Male Soul: Power and Gender Trap for Women in Leadership,&quot; was published in
+September 2019. Both textbooks are the result of walking alongside female and male
+leaders serving in complex leadership contexts and seeing God&#39;s transformative work in
+their lives. I also have a third publication (March 2024), a translation of my first book in Spanish, "Pugna por Poder".
                 </p>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-[#2D7F4E] p-6 rounded-lg">
-                <BookOpen className="w-8 h-8 text-[#FFD700] mb-3" />
+                <Globe2 className="w-8 h-8 text-[#FFD700] mb-3" />
                 <h3 className="text-white font-semibold mb-2">
-                  Areas of Expertise
+                  Cultural Background
                 </h3>
                 <p className="text-gray-300">
-                  Character/spiritual development, gender studies, women in
-                  leadership, masculinities, social power dynamics, and applied
-                  missiology
+                  Third-culture adult (Peruvian, French, and American) with experience in every continent, passionate about cultural intersections and their influence on worldview, Scripture, and church.
                 </p>
               </div>
               <div className="bg-[#4A0E4E] p-6 rounded-lg">
                 <Languages className="w-8 h-8 text-[#FFD700] mb-3" />
                 <h3 className="text-white font-semibold mb-2">
-                  Language Expertise
+                  Languages & Interests
                 </h3>
                 <p className="text-gray-300">
-                  Biblical Hebrew, Aramaic, Ancient Greek, Latin
+                  Fluent in multiple languages with a special love for French, avid soccer player, and musician (guitar, piano, Andean flute, and pan pipes).
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-[#663399] p-6 rounded-lg">
+                <Coffee className="w-8 h-8 text-[#FFD700] mb-3" />
+                <h3 className="text-white font-semibold mb-2">
+                  Personal Interests
+                </h3>
+                <p className="text-gray-300">
+                  Enjoys cooking gourmet Peruvian food, sharing coffee or tea with friends, and engaging in meaningful conversations.
+                </p>
+              </div>
+              <div className="bg-[#80002A] p-6 rounded-lg">
+                <BookOpen className="w-8 h-8 text-[#FFD700] mb-3" />
+                <h3 className="text-white font-semibold mb-2">
+                  Academic Interests
+                </h3>
+                <p className="text-gray-300">
+                  Passionate about Jürgen Moltmann's theology, St. Francis of Assisi, and various spiritual writers.
                 </p>
               </div>
             </div>
