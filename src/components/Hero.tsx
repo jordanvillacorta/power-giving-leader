@@ -40,11 +40,11 @@ export const Hero = () => {
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#663399] to-[#8A4FFF] rounded-lg blur opacity-75"></div>
             <div className="relative bg-[#0B0B1F] p-8 rounded-lg border border-[#4A0E4E]">
               <h2 className="text-2xl font-serif mb-4 text-[#FFD700]">
-                Latest Publication
+                Featured Publication
               </h2>
               <p className="text-gray-300 mb-4">
-                "The Hermeneutical Implications of Ancient Near Eastern
-                Cosmology in Biblical Interpretation"
+                "Unmasking the Male Soul: Power and Gender Trap
+                for Women in Leadership"
               </p>
               <div className="flex items-center text-[#F7EF40]">
                 <Scroll className="mr-2" />
