@@ -23,7 +23,7 @@ export const Courses = () => {
             <span className="text-[#F7EF40]">Courses</span> at Fuller Seminary
           </h2>
           <p className="text-gray-300 text-lg">
-            Explore our comprehensive selection of theological and leadership courses.
+            Explore my comprehensive selection of theological and leadership courses.
           </p>
           
           <div className="mt-6 flex flex-col sm:flex-row gap-4">

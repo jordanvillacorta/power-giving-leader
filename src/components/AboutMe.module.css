@@ -1,0 +1,39 @@
+.aboutSection {
+  @apply min-h-screen bg-[#0B0B1F] py-24;
+}
+
+.profileContainer {
+  @apply space-y-8;
+}
+
+.profileImage {
+  @apply w-64 h-64 overflow-hidden border-4 border-[#F7EF40] rounded-lg shadow-lg;
+}
+
+.infoCard {
+  @apply bg-[#2D7F4E] p-6 rounded-lg;
+}
+
+.infoCardAlt {
+  @apply bg-[#4A0E4E] p-6 rounded-lg;
+}
+
+.infoCardPurple {
+  @apply bg-[#663399] p-6 rounded-lg;
+}
+
+.infoCardBurgundy {
+  @apply bg-[#80002A] p-6 rounded-lg;
+}
+
+.icon {
+  @apply w-8 h-8 text-[#FFD700] mb-3;
+}
+
+.title {
+  @apply text-white font-semibold mb-2;
+}
+
+.description {
+  @apply text-gray-300;
+}

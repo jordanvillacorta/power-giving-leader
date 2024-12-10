@@ -1,0 +1,19 @@
+.section {
+  @apply min-h-screen bg-[#0B0B1F] py-24;
+}
+
+.title {
+  @apply text-4xl font-serif font-bold text-white mb-4;
+}
+
+.searchInput {
+  @apply w-full pl-10 pr-4 py-2 bg-[#1A1A2E] border border-[#4A0E4E] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#8A4FFF] transition-colors;
+}
+
+.filterSelect {
+  @apply pl-10 pr-8 py-2 bg-[#1A1A2E] border border-[#4A0E4E] rounded-lg text-white focus:outline-none focus:border-[#8A4FFF] transition-colors appearance-none;
+}
+
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
