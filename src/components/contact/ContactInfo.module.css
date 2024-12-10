@@ -1,0 +1,31 @@
+.container {
+  @apply space-y-8;
+}
+
+.title {
+  @apply text-2xl font-serif font-bold text-[#F7EF40] mb-6;
+}
+
+.infoGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.infoCard {
+  @apply bg-[#1A1A2E] p-6 rounded-lg border border-[#4A0E4E] hover:border-[#8A4FFF] transition-all duration-300;
+}
+
+.icon {
+  @apply w-8 h-8 text-[#F7EF40] mb-4;
+}
+
+.cardTitle {
+  @apply text-lg font-medium text-white mb-2;
+}
+
+.cardText {
+  @apply text-gray-300 leading-relaxed;
+}
+
+.cardLink {
+  @apply text-[#8A4FFF] hover:text-[#F7EF40] transition-colors;
+}

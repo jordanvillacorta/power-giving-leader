@@ -44,6 +44,18 @@ export const Navbar = () => {
               >
                 Publications
               </Link>
+              <Link
+                to="/blog"
+                className="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#663399] transition-colors"
+              >
+                Blog
+              </Link>
+              <Link
+                to="/contact"
+                className="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#663399] transition-colors"
+              >
+                Contact
+              </Link>
             </div>
           </div>
 
@@ -93,6 +105,20 @@ export const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Publications
+              </Link>
+              <Link
+                to="/blog"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#663399] transition-colors"
+                onClick={toggleMenu}
+              >
+                Blog
+              </Link>
+              <Link
+                to="/contact"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#663399] transition-colors"
+                onClick={toggleMenu}
+              >
+                Contact
               </Link>
             </div>
           </div>

@@ -1,0 +1,23 @@
+.navbar {
+  @apply fixed w-full bg-[#4A0E4E] text-white z-50;
+}
+
+.navLink {
+  @apply px-3 py-2 rounded-md text-sm font-medium hover:bg-[#663399] transition-colors;
+}
+
+.mobileMenuButton {
+  @apply p-2 rounded-md hover:bg-[#663399] transition-colors;
+}
+
+.mobileNavLink {
+  @apply block px-3 py-2 rounded-md text-base font-medium hover:bg-[#663399] transition-colors;
+}
+
+.logo {
+  @apply flex items-center;
+}
+
+.logoText {
+  @apply ml-2 text-xl font-serif;
+}

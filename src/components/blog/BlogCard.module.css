@@ -1,0 +1,27 @@
+.card {
+  @apply bg-[#0B0B1F] border border-[#4A0E4E] rounded-xl overflow-hidden hover:border-[#8A4FFF] transition-all duration-300;
+}
+
+.imageContainer {
+  @apply relative h-48 overflow-hidden;
+}
+
+.image {
+  @apply w-full h-full object-cover transition-transform duration-300 hover:scale-105;
+}
+
+.category {
+  @apply px-3 py-1 bg-[#663399] text-white rounded-full text-sm;
+}
+
+.metadata {
+  @apply flex items-center text-sm text-gray-400 mb-3;
+}
+
+.title {
+  @apply text-xl font-serif font-bold text-[#F7EF40] mb-3 hover:text-[#8A4FFF] transition-colors;
+}
+
+.excerpt {
+  @apply text-gray-300 mb-4 line-clamp-3;
+}

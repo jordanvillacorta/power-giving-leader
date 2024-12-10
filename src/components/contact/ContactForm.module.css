@@ -1,0 +1,26 @@
+.form {
+  @apply space-y-6 bg-[#1A1A2E] p-8 rounded-xl border border-[#4A0E4E] shadow-lg;
+}
+
+.inputGroup {
+  @apply space-y-2;
+}
+
+.label {
+  @apply block text-sm font-medium text-gray-300;
+}
+
+.input {
+  @apply w-full px-4 py-2 bg-[#0B0B1F] border border-[#4A0E4E] rounded-lg text-white 
+  placeholder-gray-400 focus:outline-none focus:border-[#8A4FFF] transition-colors;
+}
+
+.textarea {
+  @apply w-full px-4 py-2 bg-[#0B0B1F] border border-[#4A0E4E] rounded-lg text-white 
+  placeholder-gray-400 focus:outline-none focus:border-[#8A4FFF] transition-colors resize-none;
+}
+
+.submitButton {
+  @apply w-full flex items-center justify-center px-6 py-3 bg-[#663399] text-white rounded-lg
+  hover:bg-[#8A4FFF] transition-colors font-medium;
+}

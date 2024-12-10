@@ -1,0 +1,11 @@
+.container {
+  @apply min-h-screen bg-[#0B0B1F];
+}
+
+.title {
+  @apply text-4xl font-serif font-bold text-white mb-4;
+}
+
+.subtitle {
+  @apply text-gray-300 text-lg max-w-2xl mx-auto;
+}
