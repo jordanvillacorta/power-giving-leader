@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import styles from './ContactForm.module.css';
+import { toast } from 'react-hot-toast';
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,7 @@ export const ContactForm = () => {
     e.preventDefault();
     // Form submission logic would go here
     console.log('Form submitted:', formData);
+    toast.success('Message sent!');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

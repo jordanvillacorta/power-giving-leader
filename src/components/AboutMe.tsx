@@ -30,8 +30,7 @@ export const AboutMe = () => {
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed mt-8">
                   My first book, titled &quot;Tug of War: The Downward Ascent of Power,&quot; published in July
-2017, is currently part of the MAGL curriculum. My second publication, &quot;Unmasking the
-Male Soul: Power and Gender Trap for Women in Leadership,&quot; was published in
+2017, is currently part of the MAGL curriculum. My second publication, &quot;Unmasking the Male Soul: Power and Gender Trap for Women in Leadership,&quot; was published in
 September 2019. Both textbooks are the result of walking alongside female and male
 leaders serving in complex leadership contexts and seeing God&#39;s transformative work in
 their lives. I also have a third publication (March 2024), a translation of my first book in Spanish, "Pugna por Poder".
@@ -40,7 +39,7 @@ their lives. I also have a third publication (March 2024), a translation of my f
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-[#2D7F4E] p-6 rounded-lg">
+              <div className="bg-gradient-to-br from-[#4A0E4E] to-[#663399] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 <Globe2 className="w-8 h-8 text-[#FFD700] mb-3" />
                 <h3 className="text-white font-semibold mb-2">
                   Cultural Background
@@ -49,7 +48,7 @@ their lives. I also have a third publication (March 2024), a translation of my f
                   Third-culture adult (Peruvian, French, and American) with experience in every continent, passionate about cultural intersections and their influence on worldview, Scripture, and church.
                 </p>
               </div>
-              <div className="bg-[#4A0E4E] p-6 rounded-lg">
+              <div className="bg-gradient-to-br from-[#2D7F4E] to-[#556B2F] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 <Languages className="w-8 h-8 text-[#FFD700] mb-3" />
                 <h3 className="text-white font-semibold mb-2">
                   Languages & Interests
@@ -61,7 +60,7 @@ their lives. I also have a third publication (March 2024), a translation of my f
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-[#663399] p-6 rounded-lg">
+              <div className="bg-gradient-to-br from-[#80002A] to-[#B34D29] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 <Coffee className="w-8 h-8 text-[#FFD700] mb-3" />
                 <h3 className="text-white font-semibold mb-2">
                   Personal Interests
@@ -70,7 +69,7 @@ their lives. I also have a third publication (March 2024), a translation of my f
                   Enjoys cooking gourmet Peruvian food, sharing coffee or tea with friends, and engaging in meaningful conversations.
                 </p>
               </div>
-              <div className="bg-[#80002A] p-6 rounded-lg">
+              <div className="bg-gradient-to-br from-[#663399] to-[#8A4FFF] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 <BookOpen className="w-8 h-8 text-[#FFD700] mb-3" />
                 <h3 className="text-white font-semibold mb-2">
                   Academic Interests
@@ -93,7 +92,7 @@ their lives. I also have a third publication (March 2024), a translation of my f
                 {education.map((edu, index) => (
                   <div
                     key={index}
-                    className="bg-[#0B0B1F] border border-[#4A0E4E] p-4 rounded-lg hover:border-[#8A4FFF] transition-colors"
+                    className="bg-gradient-to-br from-[#1A1A2E] to-[#2D2D44] border border-[#4A0E4E] p-4 rounded-lg hover:border-[#8A4FFF] transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     <h4 className="text-[#FFD700] font-semibold">
                       {edu.degree} in {edu.field}
@@ -114,7 +113,7 @@ their lives. I also have a third publication (March 2024), a translation of my f
                 {achievements.map((achievement, index) => (
                   <div
                     key={index}
-                    className="bg-[#0B0B1F] border border-[#4A0E4E] p-4 rounded-lg hover:border-[#8A4FFF] transition-colors"
+                    className="bg-gradient-to-br from-[#1A1A2E] to-[#2D2D44] border border-[#4A0E4E] p-4 rounded-lg hover:border-[#8A4FFF] transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     <h4 className="text-[#FFD700] font-semibold">
                       {achievement.title}
