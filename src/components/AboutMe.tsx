@@ -16,7 +16,7 @@ export const AboutMe = () => {
                   <ProfileImage
                     username="jordanvillacorta"
                     repo="power-giving-leader"
-                    imagePath="images/WV_2022.jpg"
+                    imagePath="images/WilmerVillacorta_747x747.jpg"
                     alt="Dr. Villacorta Profile Picture"
                   />
                 </div>
