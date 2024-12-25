@@ -7,13 +7,11 @@ import { CoursesPage } from './pages/CoursesPage';
 import { PublicationsPage } from './pages/PublicationsPage';
 import { BlogPage } from './pages/BlogPage';
 import { ContactPage } from './pages/ContactPage';
-import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-[#0B0B1F]">
-        <Toaster position="bottom-right" />
         <Navbar />
         <div className="pt-16">
           <Routes>

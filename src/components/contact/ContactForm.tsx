@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.css';
-import { toast } from 'react-hot-toast';
+import { emailConfig } from '../../config/emailjs';
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -10,12 +11,37 @@ export const ContactForm = () => {
     subject: '',
     message: ''
   });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    console.log('Form submitted:', formData);
-    toast.success('Message sent!');
+    setStatus('sending');
+    console.log('emailConfig:', emailConfig);
+
+    try {
+      await emailjs.send(
+        emailConfig.serviceId,
+        emailConfig.templateId,
+        {
+          to_email: 'wvillacorta@gmail.com',
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message
+        },
+        emailConfig.publicKey
+      );
+
+      setStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+
+      // Reset success message after 5 seconds
+      setTimeout(() => setStatus('idle'), 5000);
+    } catch (error) {
+      setStatus('error');
+      // Reset error message after 5 seconds
+      setTimeout(() => setStatus('idle'), 5000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -37,6 +63,7 @@ export const ContactForm = () => {
           onChange={handleChange}
           required
           className={styles.input}
+          disabled={status === 'sending'}
         />
       </div>
 
@@ -50,6 +77,7 @@ export const ContactForm = () => {
           onChange={handleChange}
           required
           className={styles.input}
+          disabled={status === 'sending'}
         />
       </div>
 
@@ -63,6 +91,7 @@ export const ContactForm = () => {
           onChange={handleChange}
           required
           className={styles.input}
+          disabled={status === 'sending'}
         />
       </div>
 
@@ -76,12 +105,29 @@ export const ContactForm = () => {
           required
           className={styles.textarea}
           rows={5}
+          disabled={status === 'sending'}
         />
       </div>
 
-      <button type="submit" className={styles.submitButton}>
+      {status === 'success' && (
+        <div className="bg-green-600 text-white px-4 py-2 rounded-lg mb-4">
+          Message sent successfully!
+        </div>
+      )}
+
+      {status === 'error' && (
+        <div className="bg-red-600 text-white px-4 py-2 rounded-lg mb-4">
+          Failed to send message. Please try again.
+        </div>
+      )}
+
+      <button
+        type="submit"
+        className={styles.submitButton}
+        disabled={status === 'sending'}
+      >
         <Send className="w-5 h-5 mr-2" />
-        Send Message
+        {status === 'sending' ? 'Sending...' : 'Send Message'}
       </button>
     </form>
   );
