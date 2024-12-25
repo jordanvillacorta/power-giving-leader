@@ -41,7 +41,7 @@ export const Hero = () => {
                 for Women in Leadership (2019) and Tug of War: The Downward
                 Ascent of Power (2017). He is an ordained minister in the
                 Mennonite Church (USA) and pastored Hispanic communities in
-                Paris (France), California and Colorado.
+                Paris (France), California, and Colorado.
               </p>
             </div>
           </div>

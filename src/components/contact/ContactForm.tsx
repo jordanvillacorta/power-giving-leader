@@ -16,7 +16,6 @@ export const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('sending');
-    console.log('emailConfig:', emailConfig);
 
     try {
       await emailjs.send(

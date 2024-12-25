@@ -19,7 +19,7 @@
 }
 
 .featuredTitle {
-  @apply text-2xl font-serif mb-4 text-[#FFD700];
+  @apply text-2xl font-serif text-[#F7EF40];
 }
 
 .readMoreLink {
